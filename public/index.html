@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Matriculados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Matriculados</h1>
+
+        <!-- Formulario para cargar datos de matriculados -->
+        <form id="matriculadoForm">
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
+            </div>
+            <div class="form-group">
+                <label for="titulo">Título Universitario:</label>
+                <input type="text" id="titulo" name="titulo">
+            </div>
+            <div class="form-group">
+                <label for="instituto">Instituto y/o Universidad:</label>
+                <input type="text" id="instituto" name="instituto">
+            </div>
+            <div class="form-group">
+                <label for="matricula">Matrícula Profesional:</label>
+                <input type="text" id="matricula" name="matricula" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="domicilio">Domicilio de Consultorio:</label>
+                <input type="text" id="domicilio" name="domicilio">
+            </div>
+            <div class="form-group">
+                <label for="observaciones">Observaciones:</label>
+                <textarea id="observaciones" name="observaciones"></textarea>
+            </div>
+            <button type="submit">Registrar</button>
+        </form>
+
+        <!-- Tabla para mostrar los matriculados -->
+        <h2>Lista de Matriculados</h2>
+        <table id="matriculadosTable">
+            <thead>
+                <tr>
+                    <th>Apellido</th>
+                    <th>Nombre</th>
+                    <th>DNI</th>
+                    <th>Título Universitario</th>
+                    <th>Instituto/Universidad</th>
+                    <th>Matrícula Profesional</th>
+                    <th>Correo Electrónico</th>
+                    <th>Domicilio</th>
+                    <th>Observaciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se insertarán las filas dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
